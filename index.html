@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Widget with Pure CSS Tabs</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="tab-container">
+        <!-- Tab Navigation -->
+        <input type="radio" name="tabs" id="tab-checkboxes" class="tab-radio" checked>
+        <input type="radio" name="tabs" id="tab-paragraphs" class="tab-radio">
+        
+        <div class="tab-buttons">
+            <label for="tab-checkboxes" class="tab-label">Checkboxes</label>
+            <label for="tab-paragraphs" class="tab-label">Paragraphs</label>
+        </div>
+        
+        <div class="tab-contents">
+            <!-- Checkboxes Tab Content -->
+            <div class="tab-content" id="checkboxes-content">
+                <div class="cards-container">
+                    <!-- Card 1: Exactly 10 items (no show more button) -->
+                    <div class="recipe-widget">
+                        <div class="card-label">Card 1: Exactly 10 items (no button)</div>
+                        <div class="recipe-title">Basic Pasta Recipe</div>
+                        
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="pasta1">
+                                <label for="pasta1">1 pound pasta</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="olive-oil1">
+                                <label for="olive-oil1">2 tablespoons olive oil</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="garlic-basic1">
+                                <label for="garlic-basic1">3 cloves garlic, minced</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="tomatoes-basic1">
+                                <label for="tomatoes-basic1">1 can diced tomatoes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="salt-basic1">
+                                <label for="salt-basic1">Salt to taste</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="pepper-basic1">
+                                <label for="pepper-basic1">Black pepper to taste</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="basil-basic1">
+                                <label for="basil-basic1">Fresh basil leaves</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cheese-basic1">
+                                <label for="cheese-basic1">Parmesan cheese, grated</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="oregano1">
+                                <label for="oregano1">1 teaspoon dried oregano</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="butter1">
+                                <label for="butter1">2 tablespoons butter</label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card 2: More than 10 items (with show more/less) -->
+                    <div class="recipe-widget">
+                        <div class="card-label">Card 2: 15 items (shows 10, then expands)</div>
+                        <div class="recipe-title">Meat Lasagna Recipe</div>
+                        
+                        <input type="checkbox" id="expand-checkboxes" class="expand-checkbox">
+                        
+                        <ul class="ingredients-list">
+                            <li>
+                                <input type="checkbox" id="sausage2">
+                                <label for="sausage2">1 pound sweet Italian sausage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="beef2">
+                                <label for="beef2">3/4 pound lean ground beef</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="onion2">
+                                <label for="onion2">1/2 cup minced onion</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="garlic2">
+                                <label for="garlic2">2 cloves garlic, crushed</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="tomatoes2">
+                                <label for="tomatoes2">1 (28 ounce) can crushed tomatoes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="paste2">
+                                <label for="paste2">2 (6 ounce) cans tomato paste</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sauce2">
+                                <label for="sauce2">2 (6.5 ounce) cans canned tomato sauce</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="water2">
+                                <label for="water2">1/2 cup water</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sugar2">
+                                <label for="sugar2">2 tablespoons white sugar</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="basil2">
+                                <label for="basil2">1 1/2 teaspoons dried basil leaves</label>
+                            </li>
+                            
+                            <div class="hidden-content">
+                                <li>
+                                    <input type="checkbox" id="fennel2">
+                                    <label for="fennel2">1/2 teaspoon fennel seeds</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="italian2">
+                                    <label for="italian2">1 teaspoon Italian seasoning</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="salt2">
+                                    <label for="salt2">1 1/2 teaspoons salt, divided</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pepper2">
+                                    <label for="pepper2">1/4 teaspoon ground black pepper</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="parsley2">
+                                    <label for="parsley2">4 tablespoons chopped fresh parsley</label>
+                                </li>
+                            </div>
+                        </ul>
+                        
+                        <label for="expand-checkboxes" class="show-toggle">
+                            <span class="show-text">Show more</span>
+                            <span class="hide-text">Show less</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paragraphs Tab Content -->
+            <div class="tab-content" id="paragraphs-content">
+                <div class="cards-container">
+                    <!-- Card 1: Single paragraph (<10 lines) -->
+                    <div class="recipe-widget">
+                        <div class="card-label">Card 1: Single paragraph</div>
+                        <div class="recipe-title">Simple Cooking Instructions</div>
+                        <div class="paragraph-content">
+                            <p>
+                                Heat olive oil in a large pan over medium heat. Add minced garlic and sauté until fragrant. Add diced onions and cook until translucent. Season with salt and add tomatoes, simmer gently. Add basil and sugar to balance acidity. Bring salted water to boil for pasta. Cook pasta until al dente. Toss with sauce and serve with Parmesan cheese.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: More than 10 paragraphs (with show more/less) -->
+                    <div class="recipe-widget">
+                        <div class="card-label">Card 2: Single paragraph (shows 10 lines, then expands)</div>
+                        <div class="recipe-title">Complete Lasagna Instructions</div>
+                        <input type="checkbox" id="expand-paragraphs" class="expand-checkbox">
+                        <div class="paragraph-content expandable-paragraph">
+                            <p>
+                                Preheat your oven to 375°F (190°C). This temperature ensures even cooking throughout. In a large skillet, cook the Italian sausage and ground beef over medium-high heat until browned. Add minced onion and crushed garlic to the meat mixture. Cook for 3-4 minutes until fragrant. Stir in crushed tomatoes, tomato paste, and tomato sauce. Mix well to combine evenly. Add water, white sugar, dried basil leaves, fennel seeds, and Italian seasoning to the sauce. Season with 1 teaspoon of salt and black pepper. Add chopped fresh parsley and mix. Reduce heat to low and let the sauce simmer for 30 minutes, stirring occasionally. Meanwhile, bring a large pot of lightly salted water to a boil for the lasagna noodles. Cook lasagna noodles for 8-10 minutes until al dente. Drain and rinse with cold water. In a mixing bowl, combine ricotta cheese with the egg. Mix well until smooth and creamy. Add the remaining 1/2 teaspoon of salt to the ricotta mixture and mix thoroughly. Grease a 9x13 inch baking dish with butter or cooking spray to prevent sticking. Spread 1 1/2 cups of meat sauce in the bottom of the prepared baking dish evenly. Arrange 6 noodles lengthwise over the meat sauce, overlapping slightly if necessary. Spread half of the ricotta cheese mixture over the noodles using a spatula for even distribution. Top with a layer of mozzarella cheese slices. Repeat layers and finish with remaining sauce and cheese. Cover with foil and bake for 25 minutes. Remove foil and bake an additional 25 minutes. Cool for 15 minutes before serving. Enjoy your homemade lasagna!
+                            </p>
+                        </div>
+                        <label for="expand-paragraphs" class="show-toggle">
+                            <span class="show-text">Show more</span>
+                            <span class="hide-text">Show less</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
